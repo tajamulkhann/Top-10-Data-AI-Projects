@@ -1,0 +1,704 @@
+{
+  "records": [
+    {
+      "station_id": "S001",
+      "date": "2025-02-01",
+      "temperature_c": 33.79
+    },
+    {
+      "station_id": "S002",
+      "date": "2025-02-01",
+      "temperature_c": 15.8
+    },
+    {
+      "station_id": "S003",
+      "date": "2025-02-01",
+      "temperature_c": 27.55
+    },
+    {
+      "station_id": "S004",
+      "date": "2025-02-01",
+      "temperature_c": 24.18
+    },
+    {
+      "station_id": "S005",
+      "date": "2025-02-01",
+      "temperature_c": 17.31
+    },
+    {
+      "station_id": "S006",
+      "date": "2025-02-01",
+      "temperature_c": 23.01
+    },
+    {
+      "station_id": "S007",
+      "date": "2025-02-01",
+      "temperature_c": 17.39
+    },
+    {
+      "station_id": "S008",
+      "date": "2025-02-01",
+      "temperature_c": 21.19
+    },
+    {
+      "station_id": "S009",
+      "date": "2025-02-01",
+      "temperature_c": 24.38
+    },
+    {
+      "station_id": "S010",
+      "date": "2025-02-01",
+      "temperature_c": 20.2
+    },
+    {
+      "station_id": "S011",
+      "date": "2025-02-01",
+      "temperature_c": 24.68
+    },
+    {
+      "station_id": "S012",
+      "date": "2025-02-01",
+      "temperature_c": 23.55
+    },
+    {
+      "station_id": "S013",
+      "date": "2025-02-01",
+      "temperature_c": 20.84
+    },
+    {
+      "station_id": "S014",
+      "date": "2025-02-01",
+      "temperature_c": 20.28
+    },
+    {
+      "station_id": "S015",
+      "date": "2025-02-01",
+      "temperature_c": 22.45
+    },
+    {
+      "station_id": "S016",
+      "date": "2025-02-01",
+      "temperature_c": 18.44
+    },
+    {
+      "station_id": "S017",
+      "date": "2025-02-01",
+      "temperature_c": 34.94
+    },
+    {
+      "station_id": "S018",
+      "date": "2025-02-01",
+      "temperature_c": 22.4
+    },
+    {
+      "station_id": "S019",
+      "date": "2025-02-01",
+      "temperature_c": 15.88
+    },
+    {
+      "station_id": "S020",
+      "date": "2025-02-01",
+      "temperature_c": 19.18
+    },
+    {
+      "station_id": "S001",
+      "date": "2025-02-02",
+      "temperature_c": 25.07
+    },
+    {
+      "station_id": "S002",
+      "date": "2025-02-02",
+      "temperature_c": 14.53
+    },
+    {
+      "station_id": "S003",
+      "date": "2025-02-02",
+      "temperature_c": 13.81
+    },
+    {
+      "station_id": "S004",
+      "date": "2025-02-02",
+      "temperature_c": 12.09
+    },
+    {
+      "station_id": "S005",
+      "date": "2025-02-02",
+      "temperature_c": 22.9
+    },
+    {
+      "station_id": "S006",
+      "date": "2025-02-02",
+      "temperature_c": 20.34
+    },
+    {
+      "station_id": "S007",
+      "date": "2025-02-02",
+      "temperature_c": 23.9
+    },
+    {
+      "station_id": "S008",
+      "date": "2025-02-02",
+      "temperature_c": 34.01
+    },
+    {
+      "station_id": "S009",
+      "date": "2025-02-02",
+      "temperature_c": 22.55
+    },
+    {
+      "station_id": "S010",
+      "date": "2025-02-02",
+      "temperature_c": 17.39
+    },
+    {
+      "station_id": "S011",
+      "date": "2025-02-02",
+      "temperature_c": 21.32
+    },
+    {
+      "station_id": "S012",
+      "date": "2025-02-02",
+      "temperature_c": 22.62
+    },
+    {
+      "station_id": "S013",
+      "date": "2025-02-02",
+      "temperature_c": 23.2
+    },
+    {
+      "station_id": "S014",
+      "date": "2025-02-02",
+      "temperature_c": 24.4
+    },
+    {
+      "station_id": "S015",
+      "date": "2025-02-02",
+      "temperature_c": 23.21
+    },
+    {
+      "station_id": "S016",
+      "date": "2025-02-02",
+      "temperature_c": 28.06
+    },
+    {
+      "station_id": "S017",
+      "date": "2025-02-02",
+      "temperature_c": 15.04
+    },
+    {
+      "station_id": "S018",
+      "date": "2025-02-02",
+      "temperature_c": 21.92
+    },
+    {
+      "station_id": "S019",
+      "date": "2025-02-02",
+      "temperature_c": 26.14
+    },
+    {
+      "station_id": "S020",
+      "date": "2025-02-02",
+      "temperature_c": 25.87
+    },
+    {
+      "station_id": "S001",
+      "date": "2025-02-03",
+      "temperature_c": 20.63
+    },
+    {
+      "station_id": "S002",
+      "date": "2025-02-03",
+      "temperature_c": 17.25
+    },
+    {
+      "station_id": "S003",
+      "date": "2025-02-03",
+      "temperature_c": 14.39
+    },
+    {
+      "station_id": "S004",
+      "date": "2025-02-03",
+      "temperature_c": 23.2
+    },
+    {
+      "station_id": "S005",
+      "date": "2025-02-03",
+      "temperature_c": 26.99
+    },
+    {
+      "station_id": "S006",
+      "date": "2025-02-03",
+      "temperature_c": 23.16
+    },
+    {
+      "station_id": "S007",
+      "date": "2025-02-03",
+      "temperature_c": 19.97
+    },
+    {
+      "station_id": "S008",
+      "date": "2025-02-03",
+      "temperature_c": 26.25
+    },
+    {
+      "station_id": "S009",
+      "date": "2025-02-03",
+      "temperature_c": 16.33
+    },
+    {
+      "station_id": "S010",
+      "date": "2025-02-03",
+      "temperature_c": 26.65
+    },
+    {
+      "station_id": "S011",
+      "date": "2025-02-03",
+      "temperature_c": 20.67
+    },
+    {
+      "station_id": "S012",
+      "date": "2025-02-03",
+      "temperature_c": 16.7
+    },
+    {
+      "station_id": "S013",
+      "date": "2025-02-03",
+      "temperature_c": 24.4
+    },
+    {
+      "station_id": "S014",
+      "date": "2025-02-03",
+      "temperature_c": 23.48
+    },
+    {
+      "station_id": "S015",
+      "date": "2025-02-03",
+      "temperature_c": 24.14
+    },
+    {
+      "station_id": "S016",
+      "date": "2025-02-03",
+      "temperature_c": 16.5
+    },
+    {
+      "station_id": "S017",
+      "date": "2025-02-03",
+      "temperature_c": 17.91
+    },
+    {
+      "station_id": "S018",
+      "date": "2025-02-03",
+      "temperature_c": 25.24
+    },
+    {
+      "station_id": "S019",
+      "date": "2025-02-03",
+      "temperature_c": 22.77
+    },
+    {
+      "station_id": "S020",
+      "date": "2025-02-03",
+      "temperature_c": 28.07
+    },
+    {
+      "station_id": "S001",
+      "date": "2025-02-04",
+      "temperature_c": 20.39
+    },
+    {
+      "station_id": "S002",
+      "date": "2025-02-04",
+      "temperature_c": 18.05
+    },
+    {
+      "station_id": "S003",
+      "date": "2025-02-04",
+      "temperature_c": 17.8
+    },
+    {
+      "station_id": "S004",
+      "date": "2025-02-04",
+      "temperature_c": 32.4
+    },
+    {
+      "station_id": "S005",
+      "date": "2025-02-04",
+      "temperature_c": 30.57
+    },
+    {
+      "station_id": "S006",
+      "date": "2025-02-04",
+      "temperature_c": 18.19
+    },
+    {
+      "station_id": "S007",
+      "date": "2025-02-04",
+      "temperature_c": 28.09
+    },
+    {
+      "station_id": "S008",
+      "date": "2025-02-04",
+      "temperature_c": 23.07
+    },
+    {
+      "station_id": "S009",
+      "date": "2025-02-04",
+      "temperature_c": 22.55
+    },
+    {
+      "station_id": "S010",
+      "date": "2025-02-04",
+      "temperature_c": 25.31
+    },
+    {
+      "station_id": "S011",
+      "date": "2025-02-04",
+      "temperature_c": 15.77
+    },
+    {
+      "station_id": "S012",
+      "date": "2025-02-04",
+      "temperature_c": 22.25
+    },
+    {
+      "station_id": "S013",
+      "date": "2025-02-04",
+      "temperature_c": 21.95
+    },
+    {
+      "station_id": "S014",
+      "date": "2025-02-04",
+      "temperature_c": 30.87
+    },
+    {
+      "station_id": "S015",
+      "date": "2025-02-04",
+      "temperature_c": 21.15
+    },
+    {
+      "station_id": "S016",
+      "date": "2025-02-04",
+      "temperature_c": 25.02
+    },
+    {
+      "station_id": "S017",
+      "date": "2025-02-04",
+      "temperature_c": 23.04
+    },
+    {
+      "station_id": "S018",
+      "date": "2025-02-04",
+      "temperature_c": 20.09
+    },
+    {
+      "station_id": "S019",
+      "date": "2025-02-04",
+      "temperature_c": 20.66
+    },
+    {
+      "station_id": "S020",
+      "date": "2025-02-04",
+      "temperature_c": 18.65
+    },
+    {
+      "station_id": "S001",
+      "date": "2025-02-05",
+      "temperature_c": 14.63
+    },
+    {
+      "station_id": "S002",
+      "date": "2025-02-05",
+      "temperature_c": 25.62
+    },
+    {
+      "station_id": "S003",
+      "date": "2025-02-05",
+      "temperature_c": 8.21
+    },
+    {
+      "station_id": "S004",
+      "date": "2025-02-05",
+      "temperature_c": 21.74
+    },
+    {
+      "station_id": "S005",
+      "date": "2025-02-05",
+      "temperature_c": 22.23
+    },
+    {
+      "station_id": "S006",
+      "date": "2025-02-05",
+      "temperature_c": 28.64
+    },
+    {
+      "station_id": "S007",
+      "date": "2025-02-05",
+      "temperature_c": 18.38
+    },
+    {
+      "station_id": "S008",
+      "date": "2025-02-05",
+      "temperature_c": 20.38
+    },
+    {
+      "station_id": "S009",
+      "date": "2025-02-05",
+      "temperature_c": 20.27
+    },
+    {
+      "station_id": "S010",
+      "date": "2025-02-05",
+      "temperature_c": 17.03
+    },
+    {
+      "station_id": "S011",
+      "date": "2025-02-05",
+      "temperature_c": 31.42
+    },
+    {
+      "station_id": "S012",
+      "date": "2025-02-05",
+      "temperature_c": 22.4
+    },
+    {
+      "station_id": "S013",
+      "date": "2025-02-05",
+      "temperature_c": 21.69
+    },
+    {
+      "station_id": "S014",
+      "date": "2025-02-05",
+      "temperature_c": 22.76
+    },
+    {
+      "station_id": "S015",
+      "date": "2025-02-05",
+      "temperature_c": 13.23
+    },
+    {
+      "station_id": "S016",
+      "date": "2025-02-05",
+      "temperature_c": 25.47
+    },
+    {
+      "station_id": "S017",
+      "date": "2025-02-05",
+      "temperature_c": 26.45
+    },
+    {
+      "station_id": "S018",
+      "date": "2025-02-05",
+      "temperature_c": 21.13
+    },
+    {
+      "station_id": "S019",
+      "date": "2025-02-05",
+      "temperature_c": 22.93
+    },
+    {
+      "station_id": "S020",
+      "date": "2025-02-05",
+      "temperature_c": 21.55
+    },
+    {
+      "station_id": "S001",
+      "date": "2025-02-06",
+      "temperature_c": 21.19
+    },
+    {
+      "station_id": "S002",
+      "date": "2025-02-06",
+      "temperature_c": 17.26
+    },
+    {
+      "station_id": "S003",
+      "date": "2025-02-06",
+      "temperature_c": 18.15
+    },
+    {
+      "station_id": "S004",
+      "date": "2025-02-06",
+      "temperature_c": 23.12
+    },
+    {
+      "station_id": "S005",
+      "date": "2025-02-06",
+      "temperature_c": 17.49
+    },
+    {
+      "station_id": "S006",
+      "date": "2025-02-06",
+      "temperature_c": 23.99
+    },
+    {
+      "station_id": "S007",
+      "date": "2025-02-06",
+      "temperature_c": 28.89
+    },
+    {
+      "station_id": "S008",
+      "date": "2025-02-06",
+      "temperature_c": 15.27
+    },
+    {
+      "station_id": "S009",
+      "date": "2025-02-06",
+      "temperature_c": 24.42
+    },
+    {
+      "station_id": "S010",
+      "date": "2025-02-06",
+      "temperature_c": 20.01
+    },
+    {
+      "station_id": "S011",
+      "date": "2025-02-06",
+      "temperature_c": 22.31
+    },
+    {
+      "station_id": "S012",
+      "date": "2025-02-06",
+      "temperature_c": 23.63
+    },
+    {
+      "station_id": "S013",
+      "date": "2025-02-06",
+      "temperature_c": 14.91
+    },
+    {
+      "station_id": "S014",
+      "date": "2025-02-06",
+      "temperature_c": 13.95
+    },
+    {
+      "station_id": "S015",
+      "date": "2025-02-06",
+      "temperature_c": 17.88
+    },
+    {
+      "station_id": "S016",
+      "date": "2025-02-06",
+      "temperature_c": 23.86
+    },
+    {
+      "station_id": "S017",
+      "date": "2025-02-06",
+      "temperature_c": 14.13
+    },
+    {
+      "station_id": "S018",
+      "date": "2025-02-06",
+      "temperature_c": 18.74
+    },
+    {
+      "station_id": "S019",
+      "date": "2025-02-06",
+      "temperature_c": 18.36
+    },
+    {
+      "station_id": "S020",
+      "date": "2025-02-06",
+      "temperature_c": 30.87
+    },
+    {
+      "station_id": "S001",
+      "date": "2025-02-07",
+      "temperature_c": 31.26
+    },
+    {
+      "station_id": "S002",
+      "date": "2025-02-07",
+      "temperature_c": 18.88
+    },
+    {
+      "station_id": "S003",
+      "date": "2025-02-07",
+      "temperature_c": 21.03
+    },
+    {
+      "station_id": "S004",
+      "date": "2025-02-07",
+      "temperature_c": 23.13
+    },
+    {
+      "station_id": "S005",
+      "date": "2025-02-07",
+      "temperature_c": 21.28
+    },
+    {
+      "station_id": "S006",
+      "date": "2025-02-07",
+      "temperature_c": 12.32
+    },
+    {
+      "station_id": "S007",
+      "date": "2025-02-07",
+      "temperature_c": 21.44
+    },
+    {
+      "station_id": "S008",
+      "date": "2025-02-07",
+      "temperature_c": 21.25
+    },
+    {
+      "station_id": "S009",
+      "date": "2025-02-07",
+      "temperature_c": 16.62
+    },
+    {
+      "station_id": "S010",
+      "date": "2025-02-07",
+      "temperature_c": 20.6
+    },
+    {
+      "station_id": "S011",
+      "date": "2025-02-07",
+      "temperature_c": 27.85
+    },
+    {
+      "station_id": "S012",
+      "date": "2025-02-07",
+      "temperature_c": 12.52
+    },
+    {
+      "station_id": "S013",
+      "date": "2025-02-07",
+      "temperature_c": 26.38
+    },
+    {
+      "station_id": "S014",
+      "date": "2025-02-07",
+      "temperature_c": 19.33
+    },
+    {
+      "station_id": "S015",
+      "date": "2025-02-07",
+      "temperature_c": 23.8
+    },
+    {
+      "station_id": "S016",
+      "date": "2025-02-07",
+      "temperature_c": 23.79
+    },
+    {
+      "station_id": "S017",
+      "date": "2025-02-07",
+      "temperature_c": 13.1
+    },
+    {
+      "station_id": "S018",
+      "date": "2025-02-07",
+      "temperature_c": 23.28
+    },
+    {
+      "station_id": "S019",
+      "date": "2025-02-07",
+      "temperature_c": 18.64
+    },
+    {
+      "station_id": "S020",
+      "date": "2025-02-07",
+      "temperature_c": 21.82
+    }
+  ]
+}

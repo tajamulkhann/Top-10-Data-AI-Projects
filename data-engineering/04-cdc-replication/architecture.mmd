@@ -1,0 +1,8 @@
+flowchart TD
+ A[CDC messages] --> B{Newer key version?}
+ B -->|No| C[Skip stale or duplicate]
+ B -->|Yes| D{Delete?}
+ D -->|Yes| E[Retain tombstone]
+ D -->|No| F[Upsert replica]
+ E --> G[Atomic state and audit commit]
+ F --> G

@@ -1,0 +1,6 @@
+{
+  "arrival_order_converges": true,
+  "full_replay_idempotent": true,
+  "equal_version_conflict_rejected": true,
+  "delete_tombstones_retained": true
+}

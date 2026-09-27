@@ -1,0 +1,1 @@
+A mid-load failure rolled back both data and checkpoint. The retry committed 400 rows once, and the completed run was skipped on replay.

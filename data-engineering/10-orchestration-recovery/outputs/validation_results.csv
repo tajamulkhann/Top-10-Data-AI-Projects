@@ -1,0 +1,6 @@
+check,passed
+failed_load_rolled_back,True
+checkpoint_not_advanced_on_failure,True
+retry_commits_once,True
+completed_run_skipped,True
+source_sink_reconciled,True

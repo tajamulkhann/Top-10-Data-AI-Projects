@@ -1,0 +1,7 @@
+flowchart TD
+ A[API JSON fixture] --> B{Hash in manifest?}
+ B -->|Yes| C[Skip replay]
+ B -->|No| D[Content-addressed landing]
+ D --> E[Checksum and contract]
+ E --> F[Daily partitions]
+ F --> G[Atomic manifest publish]

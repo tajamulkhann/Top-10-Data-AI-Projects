@@ -1,0 +1,6 @@
+{
+  "transient_failure_retried": true,
+  "replay_preserves_rows_and_values": true,
+  "negative_amount_quarantined": true,
+  "source_amount_reconciled": true
+}

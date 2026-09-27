@@ -1,0 +1,5 @@
+check,passed
+failed_transaction_rolled_back,True
+deleted_keys_not_resurrected,True
+replay_applies_zero_changes,True
+audit_matches_applied_changes,True

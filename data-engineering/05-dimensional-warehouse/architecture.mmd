@@ -1,0 +1,11 @@
+flowchart TD
+ A[Customer source] --> D[Customer dimension]
+ B[Product source] --> E[Product dimension]
+ C[Order source] --> F[Resolve dimension keys]
+ D --> F
+ E --> F
+ F --> G{Customer found?}
+ G -->|No| H[Unknown member key 0]
+ G -->|Yes| I[Fact order]
+ H --> I
+ I --> J[FK and reconciliation checks]

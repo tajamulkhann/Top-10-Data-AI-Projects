@@ -1,0 +1,17 @@
+{
+  "records": [
+    {
+      "order_id": 11,
+      "customer_id": 30,
+      "amount_cents": 74779,
+      "status": "paid"
+    },
+    {
+      "order_id": 999,
+      "customer_id": 2,
+      "amount_cents": -100,
+      "status": "paid"
+    }
+  ],
+  "next_page": null
+}

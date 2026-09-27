@@ -1,0 +1,5 @@
+check,passed
+arrival_order_converges,True
+full_replay_idempotent,True
+equal_version_conflict_rejected,True
+delete_tombstones_retained,True

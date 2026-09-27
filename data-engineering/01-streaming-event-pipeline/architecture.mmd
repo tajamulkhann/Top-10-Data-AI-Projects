@@ -1,0 +1,9 @@
+flowchart TD
+ A[JSONL deliveries] --> B{Seen event ID?}
+ B -->|Yes| C[Skip duplicate]
+ B -->|No| D{Behind watermark?}
+ D -->|Yes| E[Late-event table]
+ D -->|No| F[Accepted events]
+ E --> G[Commit seen key and watermark]
+ F --> G
+ F --> H[Five-minute aggregates]

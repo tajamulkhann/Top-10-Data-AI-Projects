@@ -1,0 +1,6 @@
+{
+  "Input deliveries": 184.0,
+  "Accepted logical events": 180.0,
+  "Late logical events": 1.0,
+  "Duplicates on full replay": 184.0
+}

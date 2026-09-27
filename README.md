@@ -4,14 +4,14 @@
 
 A career-focused collection by **Tajamul Khan** covering Data Analytics, Data Engineering, Machine Learning, Deep Learning, Generative AI and Agentic AI.
 
-Start with **10 complete Data Analyst projects**. Each combines a business problem, an included dataset, reproducible code, saved notebook outputs, a dashboard and a STAR case study. Other collections are planned and clearly labelled.
+Explore **20 complete projects: 10 Data Analyst projects and 10 Data Engineering projects**. Each includes a business problem, data, reproducible code, saved notebook outputs, an offline dashboard and a STAR case study. Other collections are planned and clearly labelled.
 
 ## Explore the collections
 
 | Folder | Collection | Status |
 |---|---|---|
 | [`data-analytics/`](data-analytics/) | Top 10 Data Analyst Projects | Available: 10 complete projects |
-| [`data-engineering/`](data-engineering/) | Top 10 Data Engineering Projects | Planned |
+| [`data-engineering/`](data-engineering/) | Top 10 Data Engineering Projects | Available: 10 complete projects |
 | [`machine-learning/`](machine-learning/) | Top 10 Machine Learning Projects | Planned |
 | [`deep-learning/`](deep-learning/) | Top 10 Deep Learning Projects | Planned |
 | [`generative-ai/`](generative-ai/) | Top 10 Generative AI Projects | Planned |
@@ -31,6 +31,23 @@ Start with **10 complete Data Analyst projects**. Each combines a business probl
 | 8 | [Financial Performance and Budget Variance](data-analytics/08-finance-budget-variance/) | Intermediate | Variance analysis · reconciliation · financial KPIs |
 | 9 | [A/B Test of Checkout Conversion](data-analytics/09-ab-test-checkout/) | Advanced | Hypothesis tests · confidence intervals · SRM |
 | 10 | [Customer Support SLA and Backlog](data-analytics/10-support-sla-analytics/) | Advanced | SLA logic · missing outcomes · backlog aging |
+
+## Explore Data Engineering
+
+| # | Project | Level | Core skills |
+|---|---|---|---|
+| 1 | [Streaming Event Pipeline with Replay Safety](data-engineering/01-streaming-event-pipeline/) | Intermediate | Event time · deduplication · watermark · durable state |
+| 2 | [Paginated API to Warehouse ETL](data-engineering/02-api-to-warehouse-etl/) | Beginner to intermediate | Pagination · retries · validation · idempotent upserts |
+| 3 | [Bronze Silver Gold Data Pipeline](data-engineering/03-medallion-lakehouse/) | Intermediate | Bronze/silver/gold · lineage · partitioning · version resolution |
+| 4 | [Change Data Capture Replication](data-engineering/04-cdc-replication/) | Advanced | CDC · tombstones · stale events · atomic transactions |
+| 5 | [Dimensional Warehouse with Referential Integrity](data-engineering/05-dimensional-warehouse/) | Intermediate | Surrogate keys · foreign keys · fact grain · unknown members |
+| 6 | [API Snapshot Ingestion to Partitioned Storage](data-engineering/06-api-object-storage/) | Intermediate | Content addressing · checksums · partitions · manifest publish |
+| 7 | [Data Quality Gate with Quarantine and Audit](data-engineering/07-data-quality-gate/) | Intermediate | Data contracts · quarantine · release gate · audit |
+| 8 | [Batch and Stream Reconciliation Pipeline](data-engineering/08-batch-stream-unification/) | Advanced | Batch/stream overlap · version convergence · conflict detection |
+| 9 | [SCD Type 2 Customer History](data-engineering/09-scd-type-two/) | Advanced | SCD Type 2 · intervals · historical joins · boundary checks |
+| 10 | [Pipeline Orchestration with Retry and Recovery](data-engineering/10-orchestration-recovery/) | Advanced | Task dependencies · retries · rollback · checkpoints |
+
+The engineering projects test replay safety, data quality, history modelling and recovery using local Python/SQLite implementations. Distributed/cloud tools are extension targets.
 
 ## What each completed project includes
 
@@ -62,11 +79,15 @@ Run cells from top to bottom. No database server, paid software or external data
 # From the repository root
 python scripts/execute_all.py
 python scripts/verify_collection.py
+python scripts/execute_all.py data-engineering
+python scripts/verify_data_engineering.py
+python scripts/execute_all.py data-engineering
+python scripts/verify_data_engineering.py
 ```
 
-Execution uses one isolated Python subprocess and an in-process IPython shell per notebook, storing actual stdout, rendered tables and PNG chart outputs. See [`execution_report.json`](execution_report.json) for the execution record and [`requirements-lock.txt`](requirements-lock.txt) for tested package versions.
+Execution uses one isolated Python subprocess and an in-process IPython shell per notebook, storing actual stdout, rendered tables and PNG chart outputs. See [`execution_report.json`](execution_report.json) for the Analytics execution record, [`data-engineering/execution_report.json`](data-engineering/execution_report.json) for Engineering and [`requirements-lock.txt`](requirements-lock.txt) for tested package versions.
 
-Regenerate a project's dataset with its `generate_data.py`. Advanced maintainers can rebuild all generated sources with `scripts/build_collection.py`, then run `execute_all.py` and `write_documentation.py` in that order. Rebuilding clears saved notebook outputs until execution completes.
+Regenerate a project's dataset with its `generate_data.py`. Engineering maintainers can run `scripts/build_data_engineering.py`, execute the Engineering notebooks and then run `scripts/write_de_documentation.py`. Engineering maintainers can run `scripts/build_data_engineering.py`, execute the Engineering notebooks and then run `scripts/write_de_documentation.py`. Advanced maintainers can rebuild all generated sources with `scripts/build_collection.py`, then run `execute_all.py` and `write_documentation.py` in that order. Rebuilding clears saved notebook outputs until execution completes.
 
 ## Use these projects for your career
 

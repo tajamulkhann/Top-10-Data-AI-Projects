@@ -1,0 +1,1 @@
+Collapsed unchanged attributes into 80 historical versions for 60 customers; all 300 orders matched exactly one valid historical row.

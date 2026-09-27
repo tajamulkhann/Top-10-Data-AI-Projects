@@ -1,0 +1,8 @@
+flowchart TD
+ A[Historical batch] --> C[Shared version resolver]
+ B[Stream replay] --> C
+ C --> D{Same version conflicting payload?}
+ D -->|Yes| E[Fail conflict]
+ D -->|No| F[Highest-version state]
+ F --> G[Retain delete tombstones]
+ F --> H[Live serving table]

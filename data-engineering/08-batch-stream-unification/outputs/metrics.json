@@ -1,0 +1,7 @@
+{
+  "Batch rows": 200.0,
+  "Stream deliveries": 130.0,
+  "Logical keys": 230.0,
+  "Serving live orders": 220.0,
+  "Tombstones": 10.0
+}

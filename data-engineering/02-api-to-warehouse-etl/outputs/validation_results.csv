@@ -1,0 +1,5 @@
+check,passed
+transient_failure_retried,True
+replay_preserves_rows_and_values,True
+negative_amount_quarantined,True
+source_amount_reconciled,True

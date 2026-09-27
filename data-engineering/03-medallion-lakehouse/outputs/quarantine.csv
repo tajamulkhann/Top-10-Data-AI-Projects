@@ -1,0 +1,3 @@
+order_id,version,order_date,amount_cents
+1001,1,2025-01-01,-3
+1002,1,bad-date,200

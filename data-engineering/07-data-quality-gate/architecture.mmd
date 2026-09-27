@@ -1,0 +1,8 @@
+flowchart TD
+ A[Invoice source] --> B[Evaluate row rules]
+ B --> C[Accepted rows]
+ B --> D[Quarantine and audit]
+ C --> E{Rejection rate within gate?}
+ D --> E
+ E -->|Yes| F[Publish release]
+ E -->|No| G[Keep last valid release]

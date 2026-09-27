@@ -196,6 +196,7 @@ Reproduce the notebook, explain every denominator, change at least one assumptio
 ''')
 collections=[('data-analytics','Top 10 Data Analyst Projects','Available: 10 complete projects'),('data-engineering','Top 10 Data Engineering Projects','Planned'),('machine-learning','Top 10 Machine Learning Projects','Planned'),('deep-learning','Top 10 Deep Learning Projects','Planned'),('generative-ai','Top 10 Generative AI Projects','Planned'),('agentic-ai','Top 10 Agentic AI Projects','Planned')]
 for folder,title,status in collections[1:]:
+ if folder=='data-engineering' and (ROOT/'data-engineering/execution_report.json').exists():continue
  (ROOT/folder).mkdir(exist_ok=True)
  (ROOT/folder/'README.md').write_text(f'# {title}\n\n**Status: Planned.** This folder reserves the collection structure; no completed projects are included yet.\n\nFuture projects will include reproducible code, data provenance, executed evidence and STAR case studies.\n\n[Back to main repository](../README.md)\n')
 description='Career-focused Data and AI projects with datasets, executed notebooks, SQL, dashboards and STAR case studies. Explore Data Analytics, Data Engineering, Machine Learning, Deep Learning, Generative AI and Agentic AI. Starting with 10 complete Data Analyst projects.'
@@ -367,3 +368,8 @@ Suggested repository: `Top-10-Data-AI-Projects` under `tajamulkhann`.
 This package does not establish that the GitHub repository has been created or uploaded. GitHub shows notebook outputs but does not run HTML dashboards in the file browser; download those to open locally.
 ''')
 print('Wrote project documentation, root README and launch post')
+
+# Keep completed Engineering collection visible when Analytics documentation is refreshed.
+if (ROOT/"data-engineering/execution_report.json").exists():
+ import subprocess,sys
+ subprocess.run([sys.executable,str(ROOT/"scripts/write_de_documentation.py")],check=True)

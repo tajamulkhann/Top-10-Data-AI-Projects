@@ -1,0 +1,7 @@
+task,attempt,status
+extract,1,success
+validate,1,success
+load,1,failed_rolled_back
+load,2,success
+publish,1,success
+run,1,skipped_completed

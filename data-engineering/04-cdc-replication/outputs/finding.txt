@@ -1,0 +1,1 @@
+Replica contains 135 live rows and 15 tombstones. A stale update could not resurrect a deleted key, and an injected apply failure rolled back.

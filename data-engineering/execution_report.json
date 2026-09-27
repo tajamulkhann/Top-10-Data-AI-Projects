@@ -1,0 +1,72 @@
+[
+  {
+    "project": "01-streaming-event-pipeline",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.52
+  },
+  {
+    "project": "02-api-to-warehouse-etl",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.58
+  },
+  {
+    "project": "03-medallion-lakehouse",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.45
+  },
+  {
+    "project": "04-cdc-replication",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.41
+  },
+  {
+    "project": "05-dimensional-warehouse",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.43
+  },
+  {
+    "project": "06-api-object-storage",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.44
+  },
+  {
+    "project": "07-data-quality-gate",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.43
+  },
+  {
+    "project": "08-batch-stream-unification",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.41
+  },
+  {
+    "project": "09-scd-type-two",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.43
+  },
+  {
+    "project": "10-orchestration-recovery",
+    "status": "passed",
+    "executed_cells": 6,
+    "output_count": 11,
+    "seconds": 0.42
+  }
+]

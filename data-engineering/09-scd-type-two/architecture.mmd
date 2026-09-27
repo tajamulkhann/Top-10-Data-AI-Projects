@@ -1,0 +1,7 @@
+flowchart TD
+ A[Effective-dated changes] --> B[Sort and validate keys]
+ B --> C[Collapse unchanged attributes]
+ C --> D[Half-open history intervals]
+ E[Order facts] --> F[Point-in-time join]
+ D --> F
+ F --> G[Exactly one match check]

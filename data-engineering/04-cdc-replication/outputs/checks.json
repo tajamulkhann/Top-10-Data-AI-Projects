@@ -1,0 +1,6 @@
+{
+  "failed_transaction_rolled_back": true,
+  "deleted_keys_not_resurrected": true,
+  "replay_applies_zero_changes": true,
+  "audit_matches_applied_changes": true
+}

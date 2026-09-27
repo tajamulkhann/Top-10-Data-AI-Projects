@@ -1,0 +1,6 @@
+check,passed
+one_current_version_per_customer,True
+intervals_nonoverlapping,True
+boundary_joins_new_version,True
+every_fact_matches_exactly_once,True
+input_order_independent,True

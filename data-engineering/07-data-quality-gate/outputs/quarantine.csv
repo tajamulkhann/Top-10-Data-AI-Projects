@@ -1,0 +1,6 @@
+invoice_id,customer_id,amount_cents,invoice_date,failed_rules
+4,1,-5,2025-03-01,negative_amount
+9,999,38847,2025-03-01,unknown_customer
+16,2,43515,invalid,invalid_date
+31,13,32880,2025-03-01,duplicate_id
+31,13,32880,2025-03-01,duplicate_id

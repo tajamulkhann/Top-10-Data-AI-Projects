@@ -1,0 +1,5 @@
+check,passed
+foreign_key_violation_rejected,True
+source_to_fact_amount_reconciled,True
+unknown_member_policy_applied,True
+fact_grain_unique,True

@@ -1,0 +1,6 @@
+{
+  "foreign_key_violation_rejected": true,
+  "source_to_fact_amount_reconciled": true,
+  "unknown_member_policy_applied": true,
+  "fact_grain_unique": true
+}

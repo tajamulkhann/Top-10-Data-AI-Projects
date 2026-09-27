@@ -1,0 +1,14 @@
+{
+  "67b0b10c226ecd49fa4cd9b755861c1923d4cadfeeaeff3791b234b07a534437": {
+    "rows": 140,
+    "partitions": [
+      "curated/date=2025-02-01/67b0b10c226e.csv",
+      "curated/date=2025-02-02/67b0b10c226e.csv",
+      "curated/date=2025-02-03/67b0b10c226e.csv",
+      "curated/date=2025-02-04/67b0b10c226e.csv",
+      "curated/date=2025-02-05/67b0b10c226e.csv",
+      "curated/date=2025-02-06/67b0b10c226e.csv",
+      "curated/date=2025-02-07/67b0b10c226e.csv"
+    ]
+  }
+}

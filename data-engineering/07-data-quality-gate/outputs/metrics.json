@@ -1,0 +1,7 @@
+{
+  "Raw invoices": 301.0,
+  "Accepted invoices": 296.0,
+  "Rejected rows": 5.0,
+  "Rejected rate (%)": 1.6611295681063123,
+  "Degraded batch rejected rows": 101.0
+}

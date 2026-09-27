@@ -1,0 +1,1 @@
+Accepted 180 logical events and routed 1 late event; replay added no accepted rows. Monitor late-event rate before changing the lateness policy.

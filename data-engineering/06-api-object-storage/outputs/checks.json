@@ -1,0 +1,6 @@
+{
+  "identical_snapshot_skipped": true,
+  "checksum_detects_corruption": true,
+  "partition_records_reconciled": true,
+  "station_date_grain_unique": true
+}

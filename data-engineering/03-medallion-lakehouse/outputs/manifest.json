@@ -1,0 +1,8 @@
+{
+  "source_sha256": "375580ae8a58acb4b35e554de6d6396458ed8a59eb5b18b5d15a350647aad794",
+  "bronze_rows": 327,
+  "silver_rows": 300,
+  "rejected_rows": 2,
+  "superseded_versions": 25,
+  "gold_partitions": 7
+}

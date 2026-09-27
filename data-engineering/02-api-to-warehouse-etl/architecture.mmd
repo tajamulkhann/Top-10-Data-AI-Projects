@@ -1,0 +1,8 @@
+flowchart TD
+ A[Page fixture] --> B{Transient failure?}
+ B -->|Yes| C[Bounded retry]
+ C --> A
+ B -->|No| D{Valid amount?}
+ D -->|No| E[Quarantine]
+ D -->|Yes| F[Transactional upsert]
+ F --> G[Warehouse reconciliation]

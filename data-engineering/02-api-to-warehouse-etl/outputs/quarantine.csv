@@ -1,0 +1,2 @@
+order_id,customer_id,amount_cents,status,reason
+999,2,-100,paid,invalid_amount_cents

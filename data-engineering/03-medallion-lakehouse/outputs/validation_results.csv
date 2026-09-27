@@ -1,0 +1,5 @@
+check,passed
+bronze_bytes_preserved,True
+latest_version_wins,True
+gold_reconciles_to_silver,True
+deterministic_rebuild,True

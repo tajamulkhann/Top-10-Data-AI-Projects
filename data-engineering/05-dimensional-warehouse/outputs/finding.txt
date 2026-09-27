@@ -1,0 +1,1 @@
+Published 500 facts with five unresolved customer references assigned to the explicit Unknown member; fact amounts reconcile exactly to the source.

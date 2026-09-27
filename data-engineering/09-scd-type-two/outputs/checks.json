@@ -1,0 +1,7 @@
+{
+  "one_current_version_per_customer": true,
+  "intervals_nonoverlapping": true,
+  "boundary_joins_new_version": true,
+  "every_fact_matches_exactly_once": true,
+  "input_order_independent": true
+}

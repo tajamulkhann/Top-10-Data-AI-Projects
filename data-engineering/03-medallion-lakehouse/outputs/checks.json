@@ -1,0 +1,6 @@
+{
+  "bronze_bytes_preserved": true,
+  "latest_version_wins": true,
+  "gold_reconciles_to_silver": true,
+  "deterministic_rebuild": true
+}

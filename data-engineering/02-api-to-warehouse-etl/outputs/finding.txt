@@ -1,0 +1,1 @@
+Loaded 240 distinct orders with one invalid record quarantined. Full replay left both row count and values unchanged.

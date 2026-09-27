@@ -1,0 +1,5 @@
+check,passed
+identical_snapshot_skipped,True
+checksum_detects_corruption,True
+partition_records_reconciled,True
+station_date_grain_unique,True

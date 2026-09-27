@@ -1,0 +1,7 @@
+{
+  "failed_load_rolled_back": true,
+  "checkpoint_not_advanced_on_failure": true,
+  "retry_commits_once": true,
+  "completed_run_skipped": true,
+  "source_sink_reconciled": true
+}

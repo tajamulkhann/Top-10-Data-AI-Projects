@@ -1,0 +1,5 @@
+rule,failures
+duplicate_id,2
+negative_amount,1
+unknown_customer,1
+invalid_date,1

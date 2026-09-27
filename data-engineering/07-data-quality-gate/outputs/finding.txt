@@ -1,0 +1,1 @@
+Published 296 accepted rows and quarantined 5 rows. A degraded batch breached the 2% gate and did not replace the last valid release.

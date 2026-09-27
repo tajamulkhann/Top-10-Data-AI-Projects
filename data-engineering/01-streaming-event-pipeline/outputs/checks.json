@@ -1,0 +1,6 @@
+{
+  "restart_preserves_state": true,
+  "replay_adds_zero_events": true,
+  "late_route_contains_expected_id": true,
+  "input_reconciled": true
+}

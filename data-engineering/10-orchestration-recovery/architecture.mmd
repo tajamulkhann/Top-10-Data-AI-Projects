@@ -1,0 +1,9 @@
+flowchart TD
+ A[Source hash run key] --> B{Already complete?}
+ B -->|Yes| C[Skip run]
+ B -->|No| D[Extract and validate]
+ D --> E[Transactional load]
+ E -->|Failure| F[Rollback and bounded retry]
+ F --> E
+ E -->|Success| G[Commit data and checkpoint]
+ G --> H[Publish run status]

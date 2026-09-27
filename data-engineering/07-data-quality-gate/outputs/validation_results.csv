@@ -1,0 +1,5 @@
+check,passed
+raw_equals_accepted_plus_rejected,True
+overlapping_rules_not_double_counted,True
+degraded_batch_blocked,True
+prior_release_unchanged_after_failure,True

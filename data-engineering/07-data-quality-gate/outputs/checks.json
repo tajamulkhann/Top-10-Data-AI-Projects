@@ -1,0 +1,6 @@
+{
+  "raw_equals_accepted_plus_rejected": true,
+  "overlapping_rules_not_double_counted": true,
+  "degraded_batch_blocked": true,
+  "prior_release_unchanged_after_failure": true
+}

@@ -1,0 +1,8 @@
+flowchart TD
+ A[Raw source] --> B[Immutable bronze copy]
+ B --> C{Data contract}
+ C -->|Reject| D[Quarantine]
+ C -->|Accept| E[Latest-version silver]
+ E --> F[Partitioned gold]
+ B --> G[Lineage manifest]
+ F --> G

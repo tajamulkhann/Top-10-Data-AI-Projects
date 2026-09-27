@@ -37,13 +37,16 @@ def run(path):
     nbformat.validate(nb);nbformat.write(nb,path)
     return {'project':path.parent.name,'status':'passed','executed_cells':count,'output_count':sum(len(c.get('outputs',[])) for c in nb.cells),'seconds':round(time.time()-start,2)}
 if __name__=='__main__':
-    if len(sys.argv)>1:
+    if len(sys.argv)>1 and sys.argv[1] not in ['data-analytics','data-engineering']:
         print(json.dumps(run(Path(sys.argv[1]).resolve())))
     else:
         results=[]
-        for path in sorted((ROOT/'data-analytics').glob('*/analysis.ipynb')):
+        collection=sys.argv[1] if len(sys.argv)>1 else 'data-analytics'
+        pattern='*/pipeline.ipynb' if collection=='data-engineering' else '*/analysis.ipynb'
+        for path in sorted((ROOT/collection).glob(pattern)):
             p=subprocess.run([sys.executable,__file__,str(path)],text=True,capture_output=True)
             if p.returncode:print(p.stdout,p.stderr);raise SystemExit(p.returncode)
             result=json.loads(p.stdout.strip().splitlines()[-1]);results.append(result);print(result,flush=True)
-        (ROOT/'execution_report.json').write_text(json.dumps(results,indent=2))
+        report=ROOT/'data-engineering/execution_report.json' if collection=='data-engineering' else ROOT/'execution_report.json'
+        report.write_text(json.dumps(results,indent=2))
         assert len(results)==10
