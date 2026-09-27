@@ -1,0 +1,72 @@
+[
+  {
+    "project": "01-retail-sales-profitability",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.47
+  },
+  {
+    "project": "02-customer-rfm-segmentation",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.43
+  },
+  {
+    "project": "03-subscription-churn-cohorts",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.5
+  },
+  {
+    "project": "04-marketing-channel-performance",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.45
+  },
+  {
+    "project": "05-ecommerce-funnel",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.5
+  },
+  {
+    "project": "06-supply-chain-delivery",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.43
+  },
+  {
+    "project": "07-workforce-attrition",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.45
+  },
+  {
+    "project": "08-finance-budget-variance",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.43
+  },
+  {
+    "project": "09-ab-test-checkout",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 14,
+    "seconds": 0.87
+  },
+  {
+    "project": "10-support-sla-analytics",
+    "status": "passed",
+    "executed_cells": 8,
+    "output_count": 13,
+    "seconds": 0.44
+  }
+]

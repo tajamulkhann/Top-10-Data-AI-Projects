@@ -1,0 +1,1 @@
+Career-focused Data and AI projects with datasets, executed notebooks, SQL, dashboards and STAR case studies. Explore Data Analytics, Data Engineering, Machine Learning, Deep Learning, Generative AI and Agentic AI. Starting with 10 complete Data Analyst projects.

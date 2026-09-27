@@ -1,0 +1,52 @@
+[
+  [
+    "Discount bands and contribution",
+    "Compare weighted contribution margins at each discount level. This is descriptive; category mix and customer selection can confound the comparison.",
+    "\ndetail=df.groupby('discount').agg(net_sales=('net_sales','sum'),contribution=('contribution','sum'),lines=('line_id','size'))\ndetail['margin_pct']=100*detail.contribution/detail.net_sales\ndisplay(detail.round(3))\nfig,ax=plt.subplots(figsize=(8,4));detail.margin_pct.plot.bar(ax=ax,color='#a06536',rot=0);ax.set_ylabel('Weighted contribution margin (%)');ax.set_title('Discount bands: margin trade-off');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nlowest=detail.margin_pct.idxmin()\nrecommendation=f'The {lowest:.0%} discount band has the lowest observed contribution margin ({detail.loc[lowest,\"margin_pct\"]:.2f}%). Investigate category mix before changing discount policy.'\n"
+  ],
+  [
+    "Threshold sensitivity",
+    "A segment boundary is a policy choice. Compare at-risk counts under three inactivity thresholds rather than treating one threshold as universal.",
+    "\ndetail=pd.DataFrame([{'inactivity_threshold_days':d,'at_risk_customers':int(((rfm.recency_days>d)&(rfm.monetary>=500)).sum()),'historical_spend':rfm.loc[(rfm.recency_days>d)&(rfm.monetary>=500),'monetary'].sum()} for d in [60,90,120]]).set_index('inactivity_threshold_days')\ndisplay(detail.round(2))\nfig,ax=plt.subplots(figsize=(8,4));detail.at_risk_customers.plot.bar(ax=ax,color='#a06536',rot=0);ax.set_ylabel('Customers');ax.set_title('At-risk segment sensitivity');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nrecommendation=f'Using a 90-day inactivity rule identifies {detail.loc[90,\"at_risk_customers\"]:,.0f} high-value customers. Validate response to outreach before scaling; historical spend is not recoverable revenue.'\n"
+  ],
+  [
+    "Retention across customer age",
+    "The heatmap compares each cohort at the same age. Month zero is 100% by construction. The fixed dataset has complete six-month follow-up.",
+    "\ndetail=cohort.copy();display((detail*100).round(1))\nfig,ax=plt.subplots(figsize=(8,4));im=ax.imshow(detail,aspect='auto',vmin=0,vmax=1,cmap='Blues');ax.set_yticks(range(len(detail)),detail.index);ax.set_xticks(range(7),range(7));ax.set_xlabel('Months since signup');ax.set_title('Cohort retention');fig.colorbar(im,ax=ax,label='Retention fraction');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nweakest=summary.retention6_pct.idxmin()\nrecommendation=f'{weakest} has lower six-month retention ({summary.loc[weakest,\"retention6_pct\"]:.2f}%). Compare onboarding and customer mix; the plan comparison is not randomized.'\n"
+  ],
+  [
+    "Monthly ROAS stability",
+    "Evaluate monthly ratios from summed numerators and denominators. A channel annual average can hide variation.",
+    "\ndetail=df.groupby([df.date.dt.to_period('M').astype(str),'channel'])[['spend','attributed_revenue']].sum();detail['roas']=detail.attributed_revenue/detail.spend\ndetail=detail.roas.unstack('channel');display(detail.round(3))\nfig,ax=plt.subplots(figsize=(9,4));detail.plot(ax=ax);ax.set_ylabel('Attributed ROAS');ax.set_title('Monthly channel comparison');ax.legend(ncol=4,fontsize=8);fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nbest=summary.roas.idxmax()\nrecommendation=f'{best} has the highest annual attributed ROAS ({summary.loc[best,\"roas\"]:.2f}). Test incremental lift before moving budget because attribution alone cannot establish profitability.'\n"
+  ],
+  [
+    "Conditional funnel conversion by device",
+    "Compare step-level conversion using only sessions that reached the previous step. This localizes friction more precisely than overall conversion.",
+    "\ndetail=pd.DataFrame({steps[j]:100*summary[steps[j]]/summary[steps[j-1]].replace(0,np.nan) for j in range(1,len(steps))})\ndisplay(detail.round(2))\nfig,ax=plt.subplots(figsize=(9,4));detail.T.plot.bar(ax=ax,rot=15);ax.set_ylabel('Previous-step conversion (%)');ax.set_title('Funnel transition rates by device');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nworst=detail.purchase.idxmin()\nrecommendation=f'{worst} has the lowest observed checkout completion ({detail.loc[worst,\"purchase\"]:.2f}%). Audit its payment journey and validate any fix with an experiment.'\n"
+  ],
+  [
+    "Supplier delay severity",
+    "A binary on-time flag treats one day and several days late equally. Add the mean positive delay and compare fill rate.",
+    "\ndf['late_days']=(df.actual_days-df.promised_days).clip(lower=0)\ndetail=df.groupby('supplier').agg(mean_late_days=('late_days','mean'),p90_late_days=('late_days',lambda x:x.quantile(.9)),median_coverage_days=('coverage_days','median'))\ndisplay(detail.round(3))\nfig,ax=plt.subplots(figsize=(8,4));detail.mean_late_days.plot.bar(ax=ax,color='#a06536',rot=0);ax.set_ylabel('Mean positive delay (days)');ax.set_title('Delivery delay severity');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nworst=summary.otif_rate.idxmin()\nrecommendation=f'{worst} has the lowest OTIF rate ({summary.loc[worst,\"otif_rate\"]:.2%}). Review lane mix, order size and delay causes before changing suppliers.'\n"
+  ],
+  [
+    "Engagement and observed exits",
+    "Compare aggregate exit rates by starting engagement score. This is an association under a simulated data-generating rule, not evidence that changing a score causes retention.",
+    "\ndetail=df.groupby('engagement_score').agg(employees=('employee_id','size'),exits=('exited_2025','sum'));detail['exit_rate_pct']=100*detail.exits/detail.employees\ndisplay(detail.round(2))\nfig,ax=plt.subplots(figsize=(8,4));detail.exit_rate_pct.plot.bar(ax=ax,color='#a06536',rot=0);ax.set_ylabel('Cohort exit rate (%)');ax.set_title('Aggregate engagement comparison');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nworst=summary.cohort_exit_rate_pct.idxmax()\nrecommendation=f'{worst} has the highest observed cohort exit rate ({summary.loc[worst,\"cohort_exit_rate_pct\"]:.2f}%). Conduct an aggregate employee-experience review; do not score or target individual employees.'\n"
+  ],
+  [
+    "Business-unit profit variance bridge",
+    "Reconcile business-unit profit differences to the total operating profit gap. Positive values are favorable for all accounts after sign adjustment.",
+    "\ndetail=df.groupby(['business_unit','account']).favorable_variance.sum().unstack('account');detail['total_profit_variance']=detail.sum(axis=1)\nassert np.isclose(detail.total_profit_variance.sum(),actual_profit-budget_profit)\ndisplay(detail.round(2))\nfig,ax=plt.subplots(figsize=(9,4));detail.drop(columns='total_profit_variance').plot.bar(ax=ax,rot=0);ax.axhline(0,color='black',lw=.8);ax.set_ylabel('Favorable variance (USD)');ax.set_title('Profit bridge by business unit');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nworst=detail.total_profit_variance.idxmin()\nrecommendation=f'{worst} has the least favorable profit variance ({detail.loc[worst,\"total_profit_variance\"]:,.2f} USD). Review the account-level bridge and reconcile to the ledger before acting.'\n"
+  ],
+  [
+    "Uncertainty and practical significance",
+    "The interval concerns absolute conversion lift. A statistically positive change can still be too small to justify implementation cost; a practical threshold must be set before a real experiment.",
+    "\ndetail=pd.DataFrame({'estimate_pp':[100*lift],'lower_95_pp':[100*lo],'upper_95_pp':[100*hi]},index=['Treatment minus control'])\ndisplay(detail.round(4))\nfig,ax=plt.subplots(figsize=(8,3));ax.errorbar(100*lift,0,xerr=100*1.96*se,fmt='o',color='#246577',capsize=7);ax.axvline(0,color='gray',ls='--');ax.set_yticks([0],['Conversion lift']);ax.set_xlabel('Absolute percentage points');ax.set_title('Estimated lift with 95% confidence interval');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nrecommendation=f'Estimated absolute lift is {100*lift:.3f} percentage points (95% CI {100*lo:.3f} to {100*hi:.3f}). '+('Review commercial guardrails before rollout.' if lo>0 and srm>=.01 else 'Do not claim a validated improvement; review uncertainty and experiment validity.')\n"
+  ],
+  [
+    "Backlog age and satisfaction coverage",
+    "Retain unresolved tickets in backlog. Closed-ticket resolution averages alone omit the slowest cases still in progress.",
+    "\nopen_df=df[df.open_ticket==1].copy();open_df['age_band']=pd.cut(open_df.age_hours,bins=[0,24,72,168,np.inf],labels=['0-24h','24-72h','72-168h','168h+'],include_lowest=True)\ndetail=open_df.groupby('age_band',observed=False).agg(open_tickets=('ticket_id','size'),mean_age_hours=('age_hours','mean'))\nassert detail.open_tickets.sum()==df.open_ticket.sum()\ndisplay(detail.round(2))\nfig,ax=plt.subplots(figsize=(8,4));detail.open_tickets.plot.bar(ax=ax,color='#a06536',rot=0);ax.set_ylabel('Open tickets');ax.set_title('Backlog aging at snapshot');fig.tight_layout();fig.savefig(OUT/'detail.png');plt.show()\nworst=summary.sla_pct.idxmin()\nrecommendation=f'{worst} has the lowest eligible first-response SLA compliance ({summary.loc[worst,\"sla_pct\"]:.2f}%). Investigate triage and staffing while retaining overdue unanswered tickets in the metric.'\n"
+  ]
+]
